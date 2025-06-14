@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>  
+    <p>BOOKING SITE {{ all_text }}</p>
+
+    <h1> all rooms {{ all_rooms }}</h1>
+    {% for room in all_rooms %}
+        <li>{{ room }}</li>
+    {% endfor %}
+</body>
+</html>
