@@ -1,18 +1,24 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>booking</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-<body>  
-    <p>BOOKING SITE {{ all_text }}</p>
+ {% extends 'base.html' %} 
+{% block content %}
 
-    <h1> all rooms {{ all_rooms }}</h1>
-    {% for room in all_rooms %}
-        <li>{{ room }}</li>
-    {% endfor %}
-</body>
-</html>
+
+<div class = "room_list">
+{% for room in rooms %}
+
+<div class="card" style="width: 18rem;">
+    <img src="{{room.image.url}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">room{{ room.number }}</h5>
+      <p class="card-text">description {{ room.description }}</p>
+      <span class="badge text-bg-secondary">{{ room.type_room }}</span>
+      <h4>{{ room.price }}</h4>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+{% empty %}    
+{% endfor %}
+
+</div>
+
+{% endblock %}

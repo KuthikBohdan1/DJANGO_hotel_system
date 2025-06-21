@@ -1,5 +1,14 @@
 body {
-    background: #000;
-    color: rgb(27, 27, 216);
-
+    
+    background: rgba(222, 106, 28, 0.868);
+    color: #27e2fa;
 }
+
+.room_list {
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+
+
