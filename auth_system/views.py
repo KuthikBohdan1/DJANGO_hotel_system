@@ -25,6 +25,7 @@ def register_page(request):
     
 
 def login_page(request):
+    
     form = AuthenticationForm(request.POST)
     if request.method == 'POST':
         form = AuthenticationForm(request, data=request.POST)
@@ -47,3 +48,17 @@ def logout_page(request):
         logout(request)
 
     return redirect('room_list')
+
+def status(request):
+
+#     if request.user.is_authenticated:
+#         login_status = "✔ Ви увійшли"
+        
+#     else:
+#         login_status = "✖ Ви не увійшли"
+
+#     return render(
+#         request,
+#         template_name="menu.html",
+#         context = {"register_status": login_status},
+#     )# 

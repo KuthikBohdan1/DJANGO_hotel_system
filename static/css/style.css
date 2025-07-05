@@ -10,5 +10,10 @@ body {
     flex-wrap:wrap;
 }
 
+.navbar-brand {
+    
+    font-size: large;
+}
+
 
 

@@ -1,9 +1,18 @@
  {% extends 'base.html' %} 
 {% block content %}
 
+<div class="nav-bar-1">
+  {% include 'menu.html' %}
+</div>
+
+<a href="{% url 'register' %}"> register </a>
+<a href="{% url 'login' %}"> login </a>
+<a href="{% url 'logout' %}"> logout </a>
 
 <div class = "room_list">
 {% for room in rooms %}
+
+
 
 <div class="card" style="width: 18rem;">
     <img src="{{room.image.url}}" class="card-img-top" alt="...">
