@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+    <h1>бронь</h1>
+
+    <div class="card" style="width: 18rem;">
+        <img src="{{room.image.url}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">room{{ room.number }}</h5>
+          <p class="card-text">description {{ room.description }}</p>
+          <span class="badge text-bg-secondary">{{ room.type_room }}</span>
+          <h4>{{ room.price }}</h4>
+          <a href="{% url 'booking' room.id %}" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+{% endblock content %}

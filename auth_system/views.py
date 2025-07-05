@@ -49,7 +49,7 @@ def logout_page(request):
 
     return redirect('room_list')
 
-def status(request):
+# def status(request):
 
 #     if request.user.is_authenticated:
 #         login_status = "✔ Ви увійшли"
@@ -61,4 +61,4 @@ def status(request):
 #         request,
 #         template_name="menu.html",
 #         context = {"register_status": login_status},
-#     )# 
+#     )

@@ -21,7 +21,7 @@
       <p class="card-text">description {{ room.description }}</p>
       <span class="badge text-bg-secondary">{{ room.type_room }}</span>
       <h4>{{ room.price }}</h4>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <a href="{% url 'booking' room.id %}" class="btn btn-primary">Go somewhere</a>
     </div>
   </div>
 

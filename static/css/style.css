@@ -1,19 +1,24 @@
 body {
-    
+
     background: rgba(222, 106, 28, 0.868);
     color: #27e2fa;
 }
 
 .room_list {
-    display:flex;
-    gap:20px;
-    flex-wrap:wrap;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .navbar-brand {
-    
+
     font-size: large;
 }
 
-
-
+.nav-item {
+    color: blue;
+}
+.conteiner{
+    width: 100;
+    height: 100;
+}
