@@ -19,7 +19,7 @@ def room_list(request):
 def booking(request, id_room):
     room = Room.objects.get(id = id_room)
     form = BookingForm()
-    if request.method == "POST"
+    # if request.method == "POST"
     
     context = {
         'room' : room,
