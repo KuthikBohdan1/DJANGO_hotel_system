@@ -14,9 +14,13 @@
           <h4>{{ room.price }}</h4>
           <a href="{% url 'booking' room.id %}" class="btn btn-primary">Go somewhere</a>
         </div>
-        <form action="" method="post">
-            {% csrf_token %}
-            
-        </form>
+
       </div>
+
+      <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_div }}
+
+        <button type="submit" class="btn btn-primary">book</button>
+    </form>
 {% endblock content %}
