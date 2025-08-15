@@ -5,11 +5,11 @@
   {% include 'menu.html' %}
 </div>
 
-<a href="{% url 'register' %}"> register </a>
+{% comment %} <a href="{% url 'register' %}"> register </a>
 <a href="{% url 'login' %}"> login </a>
-<a href="{% url 'logout' %}"> logout </a>
+<a href="{% url 'logout' %}"> logout </a> {% endcomment %}
 
-<div class = "room_list">
+<div class = "room_list d-flex flex-wrap gap-3">
 {% for room in rooms %}
 
 
